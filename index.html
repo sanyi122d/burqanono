@@ -8,8 +8,9 @@
     <title>Burka Nonoo | Secondary School</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    
 
 </head>
 
@@ -20,22 +21,22 @@
             <img src="logo.png" alt="">
            <div class="navigation">
             <ul>
+                <i id="menu-close"  class="fa fa-times"></i>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Curses</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <img id="menu-btn" src="menu.jpg" alt="">
            </div> 
         </nav>
       <!-- Home -->
-        <section id="home">
+        <section id="home"> 
             <h2>Burka Nono Secondary School</h2>
             <p>Lorem ipsum dolor sit amet consectetur
              adipisicing elit. Error minus rem eum laborum nisi! 
-             Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-             Assumenda delectus provident atque officiis obcaecati. 
-             Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</p>
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</p>
           <div class="btn">
             <a class="blue" href="#">Learn More</a>
             <a class="yellow" href="#">Visit Courses</a>
@@ -333,13 +334,7 @@
         <li>Managed Website</li>
         <li>Marketing Services</li> 
       </div>
-      <div class="footer-col">
-        <h3>Top Products</h3>
-        <li>Manage Reputatation</li>
-        <li>Power Tools</li>
-        <li>Managed Website</li>
-        <li>Marketing Services</li> 
-      </div>
+  
       <div class="footer-col">
         <h3>Top Guides</h3>
         <li>Manage Reputatation</li>
@@ -367,6 +362,14 @@
             </div> 
 
     </footer>  
+    <script>
+      $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+      });
+      $('#menu-close ').click(function(){
+        $('nav .navigation ul').removeClass('active')
+      });
+    </script>
        
   </body>
 
